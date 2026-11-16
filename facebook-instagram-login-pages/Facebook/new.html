@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Account</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="box">
+        <a href="fb.html" class="back">&lsaquo;</a>
+        <div class="meta"><b>&infin; Meta</b></div>
+        <h2>Get started on Facebook with a Meta account</h2>
+        <p>A Meta Account lets you access multiple Meta technologies, such as Facebook, easily and securely.</p>
+
+        <form>
+            <label>Name</label>
+            <div class="name">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Surname">
+            </div>
+
+            <label>Date of birth &#9432;</label>
+            <div class="date">
+                <select id="day"><option>Day</option></select>
+                <select id="month"><option>Month</option></select>
+                <select id="year"><option>Year</option></select>
+            </div>
+
+            <div class="gender">
+                <label>Gender &#9432;</label>
+                <select>
+                    <option>Select your gender</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Custom</option>
+                    <option>Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="contact">
+                <label>Mobile number or email address</label>
+                <input type="text" placeholder="Mobile number or email address">
+                <p>You may receive notifications from us. <a href="#">Learn why we ask for your contact information</a></p>
+            </div>
+
+            <div class="password">
+                <label>Password</label>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <p class="terms">People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+            <p class="terms">By tapping Submit, you agree to create an account and to Facebook's <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.</p>
+            <p class="terms">The <a href="#">Privacy Policy</a> describes the ways we can use the information we collect when you create an account. For example, we use this information to provide, personalise and improve our products, including ads.</p>
+
+            <button type="submit">Submit</button>
+            <a href="fb.html" class="login">I already have an account</a>
+        </form>
+    </div>
+
+    <script>
+        const day = document.getElementById("day");
+        for (let d = 1; d <= 31; d++) day.add(new Option(d, d));
+
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        const month = document.getElementById("month");
+        months.forEach((m, i) => month.add(new Option(m, i + 1)));
+
+        const year = document.getElementById("year");
+        for (let y = new Date().getFullYear(); y >= 1900; y--) year.add(new Option(y, y));
+    </script>
+</body>
+</html>
