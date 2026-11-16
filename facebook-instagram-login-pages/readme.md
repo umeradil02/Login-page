@@ -8,8 +8,5 @@ Recreations of Facebook and Instagram login / signup pages using HTML & CSS.
 - `facebook/new.html` – Create Meta account
 - `instagram/insta.html` – Instagram login + signup
 
-## Live Demo
-https://YOUR-USERNAME.github.io/login-pages/
-
 ## Author
 Muhammad Umar (20261-42203)
